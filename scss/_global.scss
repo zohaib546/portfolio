@@ -1,15 +1,15 @@
 // Global styling for this template
 
 body {
-  @include body-font;
-  padding-top: 54px;
-  color: $gray-600;
+	@include body-font;
+	padding-top: 54px;
+	color: $gray-600;
 }
 @media (min-width: 992px) {
-  body {
-    padding-top: 0;
-    padding-left: $sidebar-base-width;
-  }
+	body {
+		padding-top: 0;
+		padding-left: $sidebar-base-width;
+	}
 }
 
 h1,
@@ -18,137 +18,205 @@ h3,
 h4,
 h5,
 h6 {
-  @include heading-font;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: $gray-800;
+	@include heading-font;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: $gray-800;
 }
 
 h1 {
-  font-size: 6rem;
-  line-height: 5.5rem;
+	font-size: 6rem;
+	line-height: 5.5rem;
 }
 
 h2 {
-  font-size: 3.5rem;
+	font-size: 3.5rem;
 
-  @include gradient-text($primary-color) {
-    display: inline-block;
-  }
+	@include gradient-text($primary-color) {
+		display: inline-block;
+	}
 }
 
 h3 {
-  font-size: 2rem;
-  color: $pallete-4;
+	font-size: 2rem;
+	color: $pallete-4;
 }
 
 p.lead {
-  font-size: 1.15rem;
-  font-weight: 400;
+	font-size: 1.15rem;
+	font-weight: 400;
 }
 
 .subheading.mb-3 {
-  @include gradient-text($primary-color-invert) {
-    display: inline-block;
-  }
+	@include gradient-text($primary-color-invert) {
+		display: inline-block;
+	}
 }
 
 .subheading {
-  text-transform: uppercase;
-  font-weight: 500;
-  @include heading-font;
-  font-size: 1.5rem;
+	text-transform: uppercase;
+	font-weight: 500;
+	@include heading-font;
+	font-size: 1.5rem;
 }
 
 .social-icons {
-  a {
-    display: inline-block;
-    height: 3.5rem;
-    width: 3.5rem;
-    background-color: $pallete-4;
-    color: $white !important;
-    border-radius: 100%;
-    text-align: center;
-    font-size: 1.5rem;
-    line-height: 3.5rem;
-    margin-right: 1rem;
-    transition: all 0.3s;
+	a {
+		display: inline-block;
+		height: 3.5rem;
+		width: 3.5rem;
+		background-color: $pallete-4;
+		color: $white !important;
+		border-radius: 100%;
+		text-align: center;
+		font-size: 1.5rem;
+		line-height: 3.5rem;
+		margin-right: 1rem;
+		transition: all 0.2s;
 
-    &:last-child {
-      margin-right: 0;
-    }
-    &:hover {
-      transform: translateY(-2px);
-      box-shadow: $shadow-dark;
-    }
-  }
+		&:last-child {
+			margin-right: 0;
+		}
+		&:hover {
+			transform: rotate(360deg);
+			box-shadow: $shadow-dark;
+			color: #fffa77 !important;
+		}
+	}
 }
 
 .dev-icons {
-  font-size: 3rem;
-  .list-inline-item i {
-    transition: all 0.3s;
+	font-size: 3rem;
+	.list-inline-item i {
+		transition: all 0.3s;
 
-    &:hover {
-      color: $pallete-4;
-      transition: all 0.3s;
-    }
-  }
+		&:hover {
+			color: $pallete-4;
+			transition: all 0.3s;
+		}
+	}
 }
 
 .nav-tabs {
-  border-bottom: none;
+	border-bottom: none;
 
-  .nav-link {
-    margin: 0 0.5rem;
-    border-radius: 3px;
-    border: 1px solid #e3e3e3;
-    color: $pallete-4;
-    padding: 3px 15px;
-    transition: border 0.2s, color 0.5s;
-    &.active {
-      color: $pallete-2;
-      background-color: #fff;
-      border-color: $pallete-2 $pallete-2 $pallete-2;
-    }
+	.nav-link {
+		margin: 0 0.5rem;
+		border-radius: 3px;
+		border: 1px solid #e3e3e3;
+		color: $pallete-4;
+		padding: 3px 15px;
+		transition: border 0.2s, color 0.5s;
+		&.active {
+			color: $pallete-2;
+			background-color: #fff;
+			border-color: $pallete-2 $pallete-2 $pallete-2;
+		}
 
-    &:hover {
-      color: $pallete-2;
-      background-color: #fff;
-      border-color: $pallete-2 $pallete-2 $pallete-2;
-    }
-  }
+		&:hover {
+			color: $pallete-2;
+			background-color: #fff;
+			border-color: $pallete-2 $pallete-2 $pallete-2;
+		}
+	}
 }
 
 .nav-link.text-uppercase {
-  @include heading-font;
-  font-weight: 600;
-  font-size: 1.2rem;
+	@include heading-font;
+	font-weight: 600;
+	font-size: 1.2rem;
 }
 
 .card {
-  box-shadow: $shadow-light;
-  transition: all 0.3s;
-  .card-img-top {
-    height: 102px;
-  }
+	box-shadow: $shadow-light;
+	transition: all 0.3s;
+	.card-img-top {
+		height: 102px;
+	}
 
-  .card-link {
-    color: #fff;
-    padding: 10px 15px;
-    background-color: $pallete-4;
-    border-radius: 5px;
-    transition: all 0.2s;
-    display: inline-block;
+	.card-link {
+		color: #fff;
+		padding: 10px 15px;
+		background-color: $pallete-4;
+		border-radius: 5px;
+		transition: all 0.2s;
+		display: inline-block;
 
-    &:hover {
-      background-color: darken($pallete-4, 10%);
-    }
-  }
+		&:hover {
+			background-color: darken($pallete-4, 10%);
+		}
+	}
 
-  &:hover {
-    cursor: pointer;
-    box-shadow: $shadow-dark;
-    transform: translateY(-3px);
-  }
+	&:hover {
+		cursor: pointer;
+		box-shadow: $shadow-dark;
+		transform: translateY(-3px);
+	}
+}
+
+svg {
+	height: 35px;
+	fill: $gray-600;
+	transition: all 0.3s;
+	margin-bottom: 10px;
+
+	&:hover {
+		fill: $pallete-4;
+	}
+}
+
+.container-fluid.p-0 {
+	position: relative;
+	overflow: hidden;
+
+	.heading-width {
+		width: 70%;
+	}
+}
+
+.circle {
+	position: absolute;
+	top: -228px;
+	right: -28%;
+	z-index: -2;
+	// animation: name duration timing-function delay iteration-count direction fill-mode;
+	animation: moveCircle 35s linear infinite;
+	will-change: transform;
+}
+
+@keyframes moveCircle {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.title-heading {
+	position: relative;
+
+	.left-circle {
+		content: "";
+		width: 140px;
+		height: 140px;
+		background-color: #91ffc7;
+		border-radius: 50%;
+		position: absolute;
+		top: -30px;
+		left: 58px;
+		z-index: -1;
+	}
+
+	.right-circle {
+		content: "";
+		width: 50px;
+		height: 50px;
+		background-color: #fffa77;
+		border-radius: 50%;
+		position: absolute;
+		top: -30px;
+		left: 360px;
+		z-index: -1;
+	}
 }

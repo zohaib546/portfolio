@@ -1,26 +1,26 @@
 .bg-primary {
-  background: $primary-color !important;
+	background: $primary-color !important;
 }
 
 .text-primary {
-  @include gradient-text($primary-color);
+	@include gradient-text($primary-color);
 }
 
 #about {
-  h1 {
-    color: $pallete-2;
-  }
+	h1 {
+		color: $pallete-2;
+	}
 
-  .subheading.mb-5 {
-    color: $pallete-2;
+	.subheading.mb-3 {
+		color: $pallete-2;
 
-    a {
-      @include gradient-text($primary-color);
+		a {
+			@include gradient-text($primary-color);
 
-      &:hover,
-      &:active {
-        @include gradient-text($primary-color-invert);
-      }
-    }
-  }
+			&:hover,
+			&:active {
+				@include gradient-text($primary-color-invert);
+			}
+		}
+	}
 }
