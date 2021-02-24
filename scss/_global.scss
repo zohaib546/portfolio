@@ -97,6 +97,42 @@ p.lead {
 	}
 }
 
+.resume-section {
+	.list-inline-item {
+		.fa-html5:hover {
+			color: orangered;
+		}
+
+		.fa-css3-alt:hover {
+			color: blue;
+		}
+
+		.fa-sass:hover {
+			color: palevioletred;
+		}
+
+		.fa-npm:hover {
+			color: #c53635;
+		}
+
+		.fa-bootstrap:hover {
+			color: #7952b3;
+		}
+
+		svg:hover {
+			fill: #f28b8f;
+		}
+
+		.fa-js-square:hover {
+			color: #f7df1e;
+		}
+
+		.fa-react:hover {
+			color: #5ed4f4;
+		}
+	}
+}
+
 .nav-tabs {
 	border-bottom: none;
 
