@@ -139,8 +139,13 @@ p.lead {
 			}
 		}
 
-		svg {
+		#materialize {
 			fill: #f28b8f;
+		}
+
+		#typescript,
+		#redux {
+			height: 50px;
 		}
 
 		.fa-js-square {
